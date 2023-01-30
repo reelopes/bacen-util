@@ -1,0 +1,28 @@
+{
+  "name": "bacen-util",
+  "version": "1.0.0",
+  "description": "Scripts para obter dados do Banco Central (BACEN).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "getSpiParticipants": "node scripts/get-spi-participants.js >> logs/spi-participants.log",
+    "getStrParticipants": "node scripts/get-str-participants.js >> logs/str-participants.log"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "csvtojson": "^2.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reelopes/bacen-util.git"
+  },
+  "keywords": [
+    "bacen"
+  ],
+  "author": "Renan Lopes Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reelopes/bacen-util/issues"
+  },
+  "homepage": "https://github.com/reelopes/bacen-util#readme"
+}
