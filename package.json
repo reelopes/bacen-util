@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "getSpiParticipants": "node scripts/get-spi-participants.js >> logs/spi-participants.log",
-    "getStrParticipants": "node scripts/get-str-participants.js >> logs/str-participants.log"
+    "getStrParticipants": "node scripts/get-str-participants.js >> logs/str-participants.log",
+    "getBacenData": "node scripts/get-spi-participants.js >> logs/spi-participants.log && node scripts/get-str-participants.js >> logs/str-participants.log"
   },
   "dependencies": {
     "axios": "^0.26.1",
-    "csvtojson": "^2.0.10"
+    "csvtojson": "^2.0.10",
+    "json-diff": "^1.0.6"
   },
   "repository": {
     "type": "git",
