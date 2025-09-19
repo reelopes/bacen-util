@@ -3,7 +3,7 @@ const fs = require('fs');
 const axios = require('axios');
 const jsonDiff = require('json-diff');
 
-const url = `http://www.bcb.gov.br/pom/spb/estatistica/port/ParticipantesSTRport.csv`
+const url = `https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv`
 
 axios.get(url).then(response => {
     csv({ delimiter: "auto" })
